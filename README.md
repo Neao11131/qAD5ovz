@@ -33,14 +33,14 @@ sudo apt install p7zip-full
 ```
 git add abcxyz/
 git commit -m "Upload Folder"
-git push
+git push --force
 ```
 
 > **Rename** 
 ```
 git mv nameOld nameNew
 git commit -m "Upload Folder"
-git push
+git push --force
 ```
 
 > [!TIP] 
