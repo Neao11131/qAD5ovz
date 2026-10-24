@@ -39,7 +39,7 @@ git push --force
 > **Rename** 
 ```
 git mv nameOld nameNew
-git commit -m "Upload Folder"
+git commit -m "Rename Folder"
 git push --force
 ```
 
