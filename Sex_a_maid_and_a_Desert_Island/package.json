@@ -1,0 +1,12 @@
+{
+    "name": "rmmz-game",
+    "main": "index.html",
+    "chromium-args": "--force-color-profile=srgb --disable-devtools",
+    "window": {
+        "title": "Hとメイドと無人島 | AI TL by lynxwall____",
+        "width": 1224,
+        "height": 936,
+        "position": "center",
+        "icon": "icon/icon.png"
+    }
+}

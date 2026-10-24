@@ -1,0 +1,1227 @@
+[
+    null,
+    {
+        "id": 1,
+        "expanded": true,
+        "name": "MAP001",
+        "order": 3,
+        "parentId": 0,
+        "scrollX": 1216.5,
+        "scrollY": 770.25
+    },
+    null,
+    null,
+    {
+        "id": 4,
+        "expanded": true,
+        "name": "Shack on the School Route",
+        "order": 45,
+        "parentId": 1,
+        "scrollX": 1216.5,
+        "scrollY": 1281.75,
+        "quick": false,
+        "_original": {
+            "name": "通学路の小屋"
+        }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+        "id": 10,
+        "expanded": true,
+        "name": "Jungle",
+        "order": 46,
+        "parentId": 4,
+        "scrollX": 1965,
+        "scrollY": 1532.25,
+        "quick": false,
+        "_original": {
+            "name": "密林"
+        }
+    },
+    {
+        "id": 11,
+        "expanded": true,
+        "name": "Open-Air Bath",
+        "order": 34,
+        "parentId": 18,
+        "scrollX": 1216.5,
+        "scrollY": 951.75,
+        "quick": false,
+        "_original": {
+            "name": "露天風呂"
+        }
+    },
+    {
+        "id": 12,
+        "expanded": false,
+        "name": "Island Panorama (Night)",
+        "order": 68,
+        "parentId": 53,
+        "scrollX": 1786.909090909091,
+        "scrollY": 2167.6363636363635,
+        "quick": false,
+        "_original": {
+            "name": "島全景（夜）"
+        }
+    },
+    null,
+    {
+        "id": 14,
+        "expanded": true,
+        "name": "Cave",
+        "order": 69,
+        "parentId": 1,
+        "scrollX": 3632.5714285714284,
+        "scrollY": 2356.285714285714,
+        "quick": true,
+        "_original": {
+            "name": "洞窟"
+        }
+    },
+    null,
+    {
+        "id": 16,
+        "expanded": true,
+        "name": "Jungle Ramshackle Hut",
+        "order": 47,
+        "parentId": 10,
+        "scrollX": 1216.5,
+        "scrollY": 896.25,
+        "quick": false,
+        "_original": {
+            "name": "密林ボロ小屋"
+        }
+    },
+    {
+        "id": 17,
+        "expanded": false,
+        "name": "Terrace",
+        "order": 11,
+        "parentId": 25,
+        "scrollX": 1723.5,
+        "scrollY": 894.75,
+        "quick": false,
+        "_original": {
+            "name": "テラス"
+        }
+    },
+    {
+        "id": 18,
+        "expanded": true,
+        "name": "Base First Floor",
+        "order": 32,
+        "parentId": 1,
+        "scrollX": 998.4,
+        "scrollY": 625.8,
+        "quick": false,
+        "_original": {
+            "name": "拠点一階"
+        }
+    },
+    {
+        "id": 19,
+        "expanded": true,
+        "name": "Base Second Floor",
+        "order": 33,
+        "parentId": 18,
+        "scrollX": 1216.5,
+        "scrollY": 1119.75,
+        "quick": false,
+        "_original": {
+            "name": "拠点二階"
+        }
+    },
+    {
+        "id": 20,
+        "expanded": true,
+        "name": "Detached Hut",
+        "order": 44,
+        "parentId": 1,
+        "scrollX": 1946.3999999999999,
+        "scrollY": 1405.2,
+        "quick": false,
+        "_original": {
+            "name": "離れ小屋"
+        }
+    },
+    {
+        "id": 21,
+        "expanded": true,
+        "name": "Yuri Care Hut",
+        "order": 40,
+        "parentId": 1,
+        "scrollX": 1143.6,
+        "scrollY": 817.8,
+        "quick": true,
+        "_original": {
+            "name": "ユーリ看病小屋"
+        }
+    },
+    null,
+    null,
+    {
+        "id": 24,
+        "expanded": true,
+        "name": "Ship - Outside Corridor",
+        "order": 6,
+        "parentId": 31,
+        "scrollX": 1321.5,
+        "scrollY": 915.75,
+        "quick": false,
+        "_original": {
+            "name": "船　外廊"
+        }
+    },
+    {
+        "id": 25,
+        "expanded": true,
+        "name": "Ship Cabin",
+        "order": 10,
+        "parentId": 26,
+        "scrollX": 884.7272727272727,
+        "scrollY": 560.1818181818182,
+        "quick": false,
+        "_original": {
+            "name": "船室"
+        }
+    },
+    {
+        "id": 26,
+        "expanded": true,
+        "name": "Ship Corridor",
+        "order": 9,
+        "parentId": 29,
+        "scrollX": 1769.4545454545455,
+        "scrollY": 1068,
+        "quick": false,
+        "_original": {
+            "name": "船廊下"
+        }
+    },
+    {
+        "id": 27,
+        "expanded": true,
+        "name": "Ship VIP 1",
+        "order": 20,
+        "parentId": 102,
+        "scrollX": 1216.5,
+        "scrollY": 782.25,
+        "quick": false,
+        "_original": {
+            "name": "船vip1"
+        }
+    },
+    {
+        "id": 28,
+        "expanded": true,
+        "name": "Ship VIP 2 - Yuri",
+        "order": 21,
+        "parentId": 27,
+        "scrollX": 1216.5,
+        "scrollY": 770.25,
+        "quick": false,
+        "_original": {
+            "name": "船vip2ユーリ"
+        }
+    },
+    {
+        "id": 29,
+        "expanded": true,
+        "name": "Ship Opening",
+        "order": 4,
+        "parentId": 1,
+        "scrollX": 1638,
+        "scrollY": 1043.25,
+        "quick": false,
+        "_original": {
+            "name": "船OP"
+        }
+    },
+    {
+        "id": 30,
+        "expanded": true,
+        "name": "Ship Deck",
+        "order": 7,
+        "parentId": 29,
+        "scrollX": 2624.727272727273,
+        "scrollY": 968.1818181818182,
+        "quick": false,
+        "_original": {
+            "name": "船甲板"
+        }
+    },
+    {
+        "id": 31,
+        "expanded": true,
+        "name": "Ship Lobby - First Floor",
+        "order": 5,
+        "parentId": 29,
+        "scrollX": 1489.2,
+        "scrollY": 988.1999999999999,
+        "quick": false,
+        "_original": {
+            "name": "船ロビー１階"
+        }
+    },
+    {
+        "id": 32,
+        "expanded": true,
+        "name": "Island Panorama",
+        "order": 28,
+        "parentId": 1,
+        "scrollX": 2254,
+        "scrollY": 4928,
+        "quick": true,
+        "_original": {
+            "name": "島全景"
+        }
+    },
+    {
+        "id": 33,
+        "expanded": true,
+        "name": "Base Basement",
+        "order": 35,
+        "parentId": 18,
+        "scrollX": 1217.4545454545455,
+        "scrollY": 1026,
+        "quick": false,
+        "_original": {
+            "name": "拠点地下"
+        }
+    },
+    null,
+    {
+        "id": 35,
+        "expanded": true,
+        "name": "School",
+        "order": 54,
+        "parentId": 1,
+        "scrollX": 2374.5,
+        "scrollY": 2742.75,
+        "quick": false,
+        "_original": {
+            "name": "学校"
+        }
+    },
+    {
+        "id": 36,
+        "expanded": true,
+        "name": "Lighthouse",
+        "order": 49,
+        "parentId": 4,
+        "scrollX": 1946.3999999999999,
+        "scrollY": 1251.6,
+        "quick": false,
+        "_original": {
+            "name": "灯台"
+        }
+    },
+    null,
+    null,
+    {
+        "id": 39,
+        "expanded": true,
+        "name": "Engineer's Hut",
+        "order": 52,
+        "parentId": 1,
+        "scrollX": 1786.909090909091,
+        "scrollY": 1284,
+        "quick": false,
+        "_original": {
+            "name": "エンジニアの小屋"
+        }
+    },
+    {
+        "id": 40,
+        "expanded": true,
+        "name": "School Storage Room",
+        "order": 57,
+        "parentId": 35,
+        "scrollX": 1216,
+        "scrollY": 770,
+        "quick": false,
+        "_original": {
+            "name": "学校物置"
+        }
+    },
+    {
+        "id": 41,
+        "expanded": true,
+        "name": "Base First Floor (Night)",
+        "order": 36,
+        "parentId": 1,
+        "scrollX": 1216.5,
+        "scrollY": 921.75,
+        "quick": false,
+        "_original": {
+            "name": "拠点一階（夜）"
+        }
+    },
+    {
+        "id": 42,
+        "expanded": true,
+        "name": "Base Second Floor (Night)",
+        "order": 37,
+        "parentId": 41,
+        "scrollX": 1216.5,
+        "scrollY": 770.25,
+        "quick": false,
+        "_original": {
+            "name": "拠点二階（夜）"
+        }
+    },
+    {
+        "id": 43,
+        "expanded": true,
+        "name": "Base Basement (Night)",
+        "order": 39,
+        "parentId": 41,
+        "scrollX": 1390.8,
+        "scrollY": 1197,
+        "quick": false,
+        "_original": {
+            "name": "拠点地下（夜）"
+        }
+    },
+    {
+        "id": 44,
+        "expanded": true,
+        "name": "School Underground Passage",
+        "order": 56,
+        "parentId": 35,
+        "scrollX": 1623,
+        "scrollY": 1266.75,
+        "quick": false,
+        "_original": {
+            "name": "学校地下通路"
+        }
+    },
+    {
+        "id": 45,
+        "expanded": true,
+        "name": "School 2",
+        "order": 55,
+        "parentId": 35,
+        "scrollX": 2373,
+        "scrollY": 4509.75,
+        "quick": false,
+        "_original": {
+            "name": "学校2"
+        }
+    },
+    {
+        "id": 46,
+        "expanded": true,
+        "name": "Ero Status Reveal Room",
+        "order": 74,
+        "parentId": 14,
+        "scrollX": 1426,
+        "scrollY": 1044,
+        "quick": false,
+        "_original": {
+            "name": "エロステ開示の間"
+        }
+    },
+    {
+        "id": 47,
+        "expanded": true,
+        "name": "Cave Safe Room 1",
+        "order": 75,
+        "parentId": 14,
+        "scrollX": 1390,
+        "scrollY": 1322,
+        "quick": false,
+        "_original": {
+            "name": "洞窟セーフルーム１　"
+        }
+    },
+    {
+        "id": 48,
+        "expanded": true,
+        "name": "School Underground Passage EX",
+        "order": 58,
+        "parentId": 35,
+        "scrollX": 1390,
+        "scrollY": 880,
+        "quick": false,
+        "_original": {
+            "name": "学校地下通路EX"
+        }
+    },
+    {
+        "id": 49,
+        "expanded": true,
+        "name": "School EX",
+        "order": 59,
+        "parentId": 35,
+        "scrollX": 1946.3999999999999,
+        "scrollY": 2912.4,
+        "quick": false,
+        "_original": {
+            "name": "学校EX"
+        }
+    },
+    {
+        "id": 50,
+        "expanded": true,
+        "name": "Cave (Darkness)",
+        "order": 73,
+        "parentId": 14,
+        "scrollX": 2369.3333333333335,
+        "scrollY": 2968.6666666666665,
+        "quick": false,
+        "_original": {
+            "name": "洞窟（暗闇）"
+        }
+    },
+    {
+        "id": 51,
+        "expanded": true,
+        "name": "Water-Division Hut",
+        "order": 51,
+        "parentId": 1,
+        "scrollX": 1216.5,
+        "scrollY": 1119.75,
+        "quick": false,
+        "_original": {
+            "name": "分水小屋"
+        }
+    },
+    {
+        "id": 52,
+        "expanded": true,
+        "name": "Turtle's Nest",
+        "order": 41,
+        "parentId": 1,
+        "scrollX": 994.8,
+        "scrollY": 1026.6,
+        "quick": false,
+        "_original": {
+            "name": "亀の巣"
+        }
+    },
+    {
+        "id": 53,
+        "expanded": true,
+        "name": "Hotel Lobby",
+        "order": 61,
+        "parentId": 1,
+        "scrollX": 2853.6,
+        "scrollY": 2379.6,
+        "quick": false,
+        "_original": {
+            "name": "ホテルロビー"
+        }
+    },
+    {
+        "id": 54,
+        "expanded": true,
+        "name": "Hotel Air-Conditioning Room",
+        "order": 65,
+        "parentId": 53,
+        "scrollX": 1946.3999999999999,
+        "scrollY": 1232.3999999999999,
+        "quick": false,
+        "_original": {
+            "name": "ホテル空調室"
+        }
+    },
+    {
+        "id": 55,
+        "expanded": true,
+        "name": "Noa's Tent",
+        "order": 42,
+        "parentId": 1,
+        "scrollX": 994.8,
+        "scrollY": 1060.2,
+        "quick": false,
+        "_original": {
+            "name": "乃亜テント"
+        }
+    },
+    null,
+    {
+        "id": 57,
+        "expanded": false,
+        "name": "Ship Deck (VIP Road Version)",
+        "order": 8,
+        "parentId": 30,
+        "scrollX": 1945.5,
+        "scrollY": 887.25,
+        "quick": false,
+        "_original": {
+            "name": "船甲板(VIPロード版)"
+        }
+    },
+    null,
+    {
+        "id": 59,
+        "expanded": true,
+        "name": "Underground City",
+        "order": 77,
+        "parentId": 14,
+        "scrollX": 2780.4,
+        "scrollY": 2263.7999999999997,
+        "quick": false,
+        "_original": {
+            "name": "地下都市"
+        }
+    },
+    null,
+    {
+        "id": 61,
+        "expanded": true,
+        "name": "Hotel Hallway, 2nd Floor",
+        "order": 62,
+        "parentId": 53,
+        "scrollX": 1621.5,
+        "scrollY": 782.25,
+        "quick": false,
+        "_original": {
+            "name": "ホテル廊下2階"
+        }
+    },
+    {
+        "id": 62,
+        "expanded": true,
+        "name": "School 2 EX",
+        "order": 60,
+        "parentId": 35,
+        "scrollX": 1948.8,
+        "scrollY": 1232.3999999999999,
+        "quick": false,
+        "_original": {
+            "name": "学校2EX"
+        }
+    },
+    {
+        "id": 63,
+        "expanded": true,
+        "name": "Hotel Room",
+        "order": 63,
+        "parentId": 53,
+        "scrollX": 1946.3999999999999,
+        "scrollY": 1232.3999999999999,
+        "quick": false,
+        "_original": {
+            "name": "ホテル部屋"
+        }
+    },
+    {
+        "id": 64,
+        "expanded": true,
+        "name": "Island Panorama EX",
+        "order": 29,
+        "parentId": 32,
+        "scrollX": 1946.3999999999999,
+        "scrollY": 1875.6,
+        "quick": false,
+        "_original": {
+            "name": "島全景EX"
+        }
+    },
+    {
+        "id": 65,
+        "expanded": true,
+        "name": "Hotel Guest Room",
+        "order": 64,
+        "parentId": 53,
+        "scrollX": 1946.3999999999999,
+        "scrollY": 1405.2,
+        "quick": false,
+        "_original": {
+            "name": "ホテル客室"
+        }
+    },
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    null,
+    {
+        "id": 80,
+        "expanded": true,
+        "name": "VIP Waiting Room",
+        "order": 19,
+        "parentId": 102,
+        "scrollX": 1216.5,
+        "scrollY": 770.25,
+        "quick": false,
+        "_original": {
+            "name": "VIP控え"
+        }
+    },
+    {
+        "id": 81,
+        "expanded": false,
+        "name": "VIP Road - Final Stretch",
+        "order": 18,
+        "parentId": 102,
+        "scrollX": 2401.5,
+        "scrollY": 782.25,
+        "quick": false,
+        "_original": {
+            "name": "VIPロード　終盤"
+        }
+    },
+    {
+        "id": 82,
+        "expanded": true,
+        "name": "Lighthouse Top Floor",
+        "order": 50,
+        "parentId": 36,
+        "scrollX": 1945.5,
+        "scrollY": 770.25,
+        "quick": false,
+        "_original": {
+            "name": "灯台最上階"
+        }
+    },
+    {
+        "id": 83,
+        "expanded": false,
+        "name": "Shrine Basement",
+        "order": 43,
+        "parentId": 1,
+        "scrollX": 1931.9999999999995,
+        "scrollY": 989.4,
+        "quick": false,
+        "_original": {
+            "name": "神社地下"
+        }
+    },
+    {
+        "id": 84,
+        "expanded": true,
+        "name": "Secret Beach",
+        "order": 84,
+        "parentId": 14,
+        "scrollX": 1621.7142857142856,
+        "scrollY": 1725.4285714285713,
+        "quick": true,
+        "_original": {
+            "name": "秘密の浜"
+        }
+    },
+    {
+        "id": 85,
+        "expanded": false,
+        "name": "Hotel Cafe",
+        "order": 66,
+        "parentId": 53,
+        "scrollX": 1390.2857142857142,
+        "scrollY": 917.9999999999999,
+        "quick": false,
+        "_original": {
+            "name": "ホテルカフェ"
+        }
+    },
+    {
+        "id": 86,
+        "expanded": false,
+        "name": "Surveillance Camera Room",
+        "order": 76,
+        "parentId": 14,
+        "scrollX": 1712,
+        "scrollY": 1044,
+        "quick": false,
+        "_original": {
+            "name": "監視カメラの間"
+        }
+    },
+    {
+        "id": 87,
+        "expanded": true,
+        "name": "Bust Restriction Room",
+        "order": 80,
+        "parentId": 14,
+        "scrollX": 1622.3999999999999,
+        "scrollY": 2929.7999999999997,
+        "quick": false,
+        "_original": {
+            "name": "バスト制限の間"
+        }
+    },
+    {
+        "id": 88,
+        "expanded": true,
+        "name": "Cave Safe Room 2",
+        "order": 83,
+        "parentId": 14,
+        "scrollX": 1318.6666666666667,
+        "scrollY": 1252.6666666666667,
+        "quick": false,
+        "_original": {
+            "name": "洞窟セーフルーム２"
+        }
+    },
+    {
+        "id": 89,
+        "expanded": true,
+        "name": "Bridal Hut",
+        "order": 30,
+        "parentId": 64,
+        "scrollX": 1946.3999999999999,
+        "scrollY": 1251.6,
+        "quick": false,
+        "_original": {
+            "name": "輿入れ小屋"
+        }
+    },
+    {
+        "id": 90,
+        "expanded": true,
+        "name": "Open-Air Bath (Night)",
+        "order": 38,
+        "parentId": 41,
+        "scrollX": 1390.8,
+        "scrollY": 1003.8,
+        "quick": false,
+        "_original": {
+            "name": "露天風呂(夜)"
+        }
+    },
+    {
+        "id": 91,
+        "expanded": true,
+        "name": "Yuri Ending",
+        "order": 88,
+        "parentId": 1,
+        "scrollX": 1390.2857142857142,
+        "scrollY": 894,
+        "quick": false,
+        "_original": {
+            "name": "ユーリED"
+        }
+    },
+    {
+        "id": 92,
+        "expanded": true,
+        "name": "Rize Ending",
+        "order": 90,
+        "parentId": 91,
+        "scrollX": 1390.2857142857142,
+        "scrollY": 880.2857142857142,
+        "quick": false,
+        "_original": {
+            "name": "梨世ED"
+        }
+    },
+    {
+        "id": 93,
+        "expanded": false,
+        "name": "Noa Ending",
+        "order": 89,
+        "parentId": 91,
+        "scrollX": 1390.2857142857142,
+        "scrollY": 880.2857142857142,
+        "quick": false,
+        "_original": {
+            "name": "乃亜ED"
+        }
+    },
+    null,
+    {
+        "id": 95,
+        "expanded": true,
+        "name": "Gallery",
+        "order": 2,
+        "parentId": 0,
+        "scrollX": 1555.5,
+        "scrollY": 1617.75,
+        "quick": false,
+        "_original": {
+            "name": "ギャラリー"
+        }
+    },
+    {
+        "id": 96,
+        "expanded": true,
+        "name": "Hotel Basement",
+        "order": 67,
+        "parentId": 53,
+        "scrollX": 1390.2857142857142,
+        "scrollY": 1039.7142857142856,
+        "quick": false,
+        "_original": {
+            "name": "ホテル地下"
+        }
+    },
+    {
+        "id": 97,
+        "expanded": true,
+        "name": "Ship - Endgame",
+        "order": 12,
+        "parentId": 1,
+        "scrollX": 1774.5,
+        "scrollY": 1026.75,
+        "quick": false,
+        "_original": {
+            "name": "船終盤"
+        }
+    },
+    {
+        "id": 98,
+        "expanded": true,
+        "name": "Ship 1F Lobby - Endgame",
+        "order": 13,
+        "parentId": 97,
+        "scrollX": 1769.4545454545455,
+        "scrollY": 1120.3636363636365,
+        "quick": false,
+        "_original": {
+            "name": "船ロビー１階終盤"
+        }
+    },
+    {
+        "id": 99,
+        "expanded": true,
+        "name": "Ship Exterior Corridor - Endgame",
+        "order": 16,
+        "parentId": 98,
+        "scrollX": 973,
+        "scrollY": 616.5,
+        "quick": false,
+        "_original": {
+            "name": "船　外廊終盤"
+        }
+    },
+    {
+        "id": 100,
+        "expanded": true,
+        "name": "Ship Nightclub - Endgame",
+        "order": 14,
+        "parentId": 98,
+        "scrollX": 1216.8,
+        "scrollY": 946.1999999999999,
+        "quick": false,
+        "_original": {
+            "name": "船ナイトクラブ終盤"
+        }
+    },
+    {
+        "id": 101,
+        "expanded": false,
+        "name": "Ship Nightclub Restroom - Endgame",
+        "order": 15,
+        "parentId": 100,
+        "scrollX": 1216.8,
+        "scrollY": 880.1999999999999,
+        "quick": false,
+        "_original": {
+            "name": "船ナイトクラブ　トイレ終盤"
+        }
+    },
+    {
+        "id": 102,
+        "expanded": true,
+        "name": "Ship Deck - Endgame",
+        "order": 17,
+        "parentId": 98,
+        "scrollX": 2218.5,
+        "scrollY": 1026.75,
+        "quick": false,
+        "_original": {
+            "name": "船甲板　終盤"
+        }
+    },
+    {
+        "id": 103,
+        "expanded": true,
+        "name": "Ship Corridor - Endgame",
+        "order": 24,
+        "parentId": 98,
+        "scrollX": 1216,
+        "scrollY": 770,
+        "quick": false,
+        "_original": {
+            "name": "船廊下　終盤"
+        }
+    },
+    {
+        "id": 104,
+        "expanded": true,
+        "name": "Ship Cabin - Endgame",
+        "order": 26,
+        "parentId": 103,
+        "scrollX": 1216.8,
+        "scrollY": 898.1999999999999,
+        "quick": true,
+        "_original": {
+            "name": "船室　終盤"
+        }
+    },
+    {
+        "id": 105,
+        "expanded": false,
+        "name": "Terrace - Endgame",
+        "order": 25,
+        "parentId": 103,
+        "scrollX": 1390.5,
+        "scrollY": 879.75,
+        "quick": true,
+        "_original": {
+            "name": "テラス　終盤"
+        }
+    },
+    {
+        "id": 106,
+        "expanded": true,
+        "name": "Student Dormitory",
+        "order": 82,
+        "parentId": 14,
+        "scrollX": 1614,
+        "scrollY": 770.25,
+        "quick": false,
+        "_original": {
+            "name": "学生寮"
+        }
+    },
+    {
+        "id": 107,
+        "expanded": false,
+        "name": "BAR Jun-ai",
+        "order": 79,
+        "parentId": 59,
+        "scrollX": 1216.5,
+        "scrollY": 1028.25,
+        "quick": false,
+        "_original": {
+            "name": "BAR純愛"
+        }
+    },
+    {
+        "id": 108,
+        "expanded": true,
+        "name": "Archive Room",
+        "order": 81,
+        "parentId": 87,
+        "scrollX": 1623.6,
+        "scrollY": 1407,
+        "quick": false,
+        "_original": {
+            "name": "資料室"
+        }
+    },
+    {
+        "id": 109,
+        "expanded": false,
+        "name": "Shrine",
+        "order": 48,
+        "parentId": 10,
+        "scrollX": 1396.5,
+        "scrollY": 1074.75,
+        "quick": false,
+        "_original": {
+            "name": "祠"
+        }
+    },
+    {
+        "id": 110,
+        "expanded": true,
+        "name": "Cave (East Beach Event)",
+        "order": 70,
+        "parentId": 14,
+        "scrollX": 3892.7999999999997,
+        "scrollY": 2464.7999999999997,
+        "quick": false,
+        "_original": {
+            "name": "洞窟(東の浜イベ)"
+        }
+    },
+    {
+        "id": 111,
+        "expanded": true,
+        "name": "East Beach",
+        "order": 71,
+        "parentId": 110,
+        "scrollX": 2162.4,
+        "scrollY": 1390.8,
+        "quick": false,
+        "_original": {
+            "name": "東の浜"
+        }
+    },
+    {
+        "id": 112,
+        "expanded": false,
+        "name": "Cave Room",
+        "order": 72,
+        "parentId": 110,
+        "scrollX": 1390.2857142857142,
+        "scrollY": 777.4285714285713,
+        "quick": false,
+        "_original": {
+            "name": "洞窟の部屋"
+        }
+    },
+    {
+        "id": 113,
+        "expanded": true,
+        "name": "Island Panorama - After the Waterway",
+        "order": 31,
+        "parentId": 32,
+        "scrollX": 1965.6,
+        "scrollY": 2557.2,
+        "quick": false,
+        "_original": {
+            "name": "島全景分水後"
+        }
+    },
+    {
+        "id": 114,
+        "expanded": true,
+        "name": "Ship VIP 2 - Noa",
+        "order": 23,
+        "parentId": 27,
+        "scrollX": 1071.6,
+        "scrollY": 747,
+        "quick": false,
+        "_original": {
+            "name": "船vip2乃亜"
+        }
+    },
+    {
+        "id": 115,
+        "expanded": false,
+        "name": "Ship VIP 2 - Rize",
+        "order": 22,
+        "parentId": 27,
+        "scrollX": 1216.5,
+        "scrollY": 782.25,
+        "quick": false,
+        "_original": {
+            "name": "船vip2梨世"
+        }
+    },
+    {
+        "id": 116,
+        "expanded": true,
+        "name": "Ending Mansion",
+        "order": 91,
+        "parentId": 1,
+        "scrollX": 1081.3333333333333,
+        "scrollY": 695.3333333333334,
+        "quick": true,
+        "_original": {
+            "name": "ED屋敷"
+        }
+    },
+    {
+        "id": 117,
+        "expanded": true,
+        "name": "Settlement Hut 1",
+        "order": 53,
+        "parentId": 1,
+        "scrollX": 1426.8,
+        "scrollY": 1120.2,
+        "quick": false,
+        "_original": {
+            "name": "集落小屋１"
+        }
+    },
+    {
+        "id": 118,
+        "expanded": false,
+        "name": "Island (Kamenokami Event)",
+        "order": 85,
+        "parentId": 84,
+        "scrollX": 1786.6666666666667,
+        "scrollY": 2488.6666666666665,
+        "quick": true,
+        "_original": {
+            "name": "島（カメノカミイベ）"
+        }
+    },
+    {
+        "id": 119,
+        "expanded": true,
+        "name": "Yuri's Sickbed Hut (Kamenokami Event)",
+        "order": 86,
+        "parentId": 84,
+        "scrollX": 1390.2857142857142,
+        "scrollY": 1007.1428571428571,
+        "quick": true,
+        "_original": {
+            "name": "ユーリ看病小屋(カメノカミイベ)"
+        }
+    },
+    {
+        "id": 120,
+        "expanded": true,
+        "name": "Secret Beach (Kamenokami Event)",
+        "order": 87,
+        "parentId": 84,
+        "scrollX": 1390.2857142857142,
+        "scrollY": 894,
+        "quick": false,
+        "_original": {
+            "name": "秘密の浜（カメノカミイベ）"
+        }
+    },
+    {
+        "id": 121,
+        "expanded": true,
+        "name": "Chamber of True Love",
+        "order": 78,
+        "parentId": 59,
+        "scrollX": 1216.5,
+        "scrollY": 1070.25,
+        "quick": false,
+        "_original": {
+            "name": "真実の愛の間"
+        }
+    },
+    {
+        "id": 122,
+        "expanded": true,
+        "name": "Ship Cabin - Anywhere H",
+        "order": 27,
+        "parentId": 104,
+        "scrollX": 1216.8,
+        "scrollY": 745.8,
+        "quick": true,
+        "_original": {
+            "name": "船室　どこでもH"
+        }
+    },
+    {
+        "id": 123,
+        "expanded": false,
+        "name": "True Ending Island",
+        "order": 92,
+        "parentId": 1,
+        "scrollX": 1322.3999999999999,
+        "scrollY": 3439.7999999999997,
+        "quick": true,
+        "_original": {
+            "name": "真ED島"
+        }
+    },
+    {
+        "id": 124,
+        "expanded": false,
+        "name": "Memories",
+        "order": 1,
+        "parentId": 0,
+        "scrollX": 1318.8,
+        "scrollY": 684.6,
+        "quick": true,
+        "_original": {
+            "name": "回想"
+        }
+    }
+]
