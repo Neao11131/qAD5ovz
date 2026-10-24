@@ -1,5 +1,5 @@
 > [!NOTE]
->https://w7lio.github.io/qAD5ovz/TheNpcSECH2/www/index.html
+> https://w7lio.github.io/qAD5ovz/TheNpcSech2/index.html
 
 
 ### 1.Wget + Cookie
