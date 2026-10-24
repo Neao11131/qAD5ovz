@@ -26,8 +26,8 @@ sudo apt install p7zip-full
 
 ### 3.Push
 > [!WARNING]
-> find -type f -size +100M -printf '%s bytes\t%p\n' | sort -nr
-> git rm --cached "PATH"
+> find -type f -size +100M -printf '%s bytes\t%p\n' | sort -nr  
+> git rm --cached "PATH"  
 
 > **Push Folder**
 ```
