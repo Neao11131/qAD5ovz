@@ -1,0 +1,5 @@
+[
+null,
+{"id":1,"battlerName":"","characterIndex":0,"characterName":"Main_Actor1","classId":1,"equips":[0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"主人公","nickname":"","note":"","profile":""},
+{"id":2,"battlerName":"","characterIndex":5,"characterName":"Main_Actor4","classId":2,"equips":[0,0,0,0,0],"faceIndex":0,"faceName":"","traits":[],"initialLevel":1,"maxLevel":99,"name":"黄金クワガタ","nickname":"","note":"","profile":""}
+]
