@@ -1,5 +1,5 @@
 > [!NOTE]
-> https://w7lio.github.io/qAD5ovz/TheNpcSech2/index.html
+> https://w7lio.github.io/qAD5ovz/TheNpcSech2/index.html  
 > https://w7lio.github.io/qAD5ovz/Sex_a_maid_and_a_Desert_Island/index.html
 
 
