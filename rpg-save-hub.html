@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RPG Save Hub</title>
+<style>
+:root{color-scheme:dark;--bg:#0b1020;--panel:#121a2d;--panel2:#18233a;--line:#293650;--text:#e8edf7;--muted:#9ba9c2;--accent:#8b9cff;--good:#64d8a4;--danger:#ff8585}
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(circle at 15% 0%,#1a2750 0,transparent 35%),var(--bg);color:var(--text);font:15px/1.5 system-ui,-apple-system,Segoe UI,sans-serif}
+.wrap{max-width:1080px;margin:auto;padding:28px 18px 60px}.top{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:24px}.brand{display:flex;gap:12px;align-items:center}.logo{display:grid;place-items:center;width:44px;height:44px;border-radius:14px;background:#283763;color:#cbd3ff;font-size:22px}.brand h1{font-size:22px;margin:0}.brand p{margin:2px 0 0;color:var(--muted);font-size:13px}.pill{border:1px solid var(--line);border-radius:999px;padding:7px 11px;color:var(--muted);font-size:12px}
+.grid{display:grid;grid-template-columns:300px minmax(0,1fr);gap:18px}.panel{background:rgba(18,26,45,.94);border:1px solid var(--line);border-radius:18px;padding:18px;min-width:0}.panel h2{font-size:16px;margin:0 0 14px}.muted{color:var(--muted)}.small{font-size:12px}.field{display:grid;gap:6px;margin-bottom:13px}label{font-size:13px;color:#c4cee0}input,select,textarea{width:100%;border:1px solid var(--line);border-radius:10px;background:#0c1426;color:var(--text);padding:11px 12px;font:inherit;outline:none}input:focus,select:focus,textarea:focus{border-color:var(--accent)}textarea{min-height:270px;resize:vertical;font:12px/1.5 ui-monospace,SFMono-Regular,Consolas,monospace}.btn{border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:10px 13px;border-radius:10px;font:inherit;font-weight:600;cursor:pointer}.btn:hover{filter:brightness(1.15)}.primary{background:var(--accent);color:#10162b;border-color:transparent}.danger{color:var(--danger)}.row{display:flex;gap:8px;flex-wrap:wrap}.row>*{flex:1}.game-list{display:grid;gap:8px;margin-top:14px}.game{display:flex;align-items:center;gap:10px;text-align:left;width:100%;border:1px solid var(--line);background:#0d1528;color:var(--text);border-radius:12px;padding:11px;cursor:pointer}.game.active{border-color:var(--accent);background:#202c4c}.game .glyph{width:34px;height:34px;display:grid;place-items:center;background:#202b45;border-radius:9px;font-size:18px}.game .meta{min-width:0;flex:1}.game strong{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.game small{color:var(--muted)}.status{padding:10px 12px;border-radius:10px;background:#0d1528;border:1px solid var(--line);color:var(--muted);margin-top:12px;font-size:13px}.status.good{color:var(--good)}.status.bad{color:var(--danger)}.toolbar{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap}.toolbar h2{margin-bottom:4px}.tag{display:inline-block;border:1px solid var(--line);border-radius:7px;padding:3px 7px;color:var(--muted);font-size:11px}.notice{border:1px solid #3b4b75;background:#111c35;padding:12px 14px;border-radius:12px;margin:0 0 18px;color:#c4cee8;font-size:13px}.section{margin-top:20px}.hidden{display:none!important}.empty{padding:30px 12px;text-align:center;color:var(--muted)}.foot{margin-top:18px;color:var(--muted);font-size:12px}.check{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--muted);margin:10px 0}.check input{width:auto}@media(max-width:760px){.grid{grid-template-columns:1fr}.wrap{padding:18px 12px 40px}.panel{padding:15px}.top{align-items:flex-start}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand"><div class="logo">▣</div><div><h1>RPG Save Hub</h1><p>Quản lý save game trên trình duyệt</p></div></div>
+    <span class="pill">Local-first · Không cần tài khoản</span>
+  </header>
+  <div class="notice"><strong>Giới hạn quan trọng:</strong> trang này không thể tự đọc dữ liệu riêng tư của mọi game hoặc localStorage của website khác. Bạn có thể nhập/xuất file save JSON tại đây. Muốn đồng bộ trực tiếp với từng game, game đó cần tích hợp API hoặc cơ chế kết nối với Save Hub.</div>
+  <div class="grid">
+    <aside class="panel">
+      <h2>Danh sách game</h2>
+      <div class="field"><label for="newGame">Thêm game vào danh sách</label><input id="newGame" maxlength="80" placeholder="Ví dụ: RPG Adventure"></div>
+      <button class="btn primary" id="addGame" style="width:100%">+ Thêm game</button>
+      <div id="gameList" class="game-list"></div>
+      <div class="foot">Danh sách game và bản save được lưu trên trình duyệt hiện tại. Hãy xuất file để sao lưu hoặc chuyển thiết bị.</div>
+    </aside>
+    <main class="panel">
+      <div id="noGame" class="empty">Chọn một game ở bên trái hoặc thêm game mới.</div>
+      <div id="editor" class="hidden">
+        <div class="toolbar">
+          <div><h2 id="gameTitle">Game</h2><div class="muted small">Dữ liệu save đang chọn</div></div>
+          <span id="saveState" class="tag">Chưa lưu</span>
+        </div>
+        <div class="section">
+          <div class="field"><label for="saveName">Tên bản save</label><input id="saveName" maxlength="100" placeholder="Ví dụ: Save trước boss cuối"></div>
+          <div class="field"><label for="jsonData">Nội dung JSON</label><textarea id="jsonData" spellcheck="false" placeholder='{"level": 1, "gold": 0}'></textarea></div>
+          <div class="row">
+            <button class="btn primary" id="saveBtn">Lưu bản save</button>
+            <button class="btn" id="formatBtn">Định dạng JSON</button>
+          </div>
+          <div id="editorStatus" class="status">Nhập dữ liệu JSON hoặc import một file save.</div>
+        </div>
+        <div class="section">
+          <h2>Import / Export</h2>
+          <div class="field"><label for="fileInput">Import file JSON</label><input id="fileInput" type="file" accept=".json,application/json"></div>
+          <div class="row">
+            <button class="btn" id="exportBtn">Export bản save này</button>
+            <button class="btn" id="exportAllBtn">Export tất cả save</button>
+          </div>
+          <p class="muted small">“Export tất cả save” tạo một file backup riêng của Save Hub. Khi import backup này, các bản save sẽ được thêm vào danh sách, không tự ghi đè bản hiện có.</p>
+          <div class="row">
+            <button class="btn" id="importAllBtn">Import backup Save Hub</button>
+            <button class="btn danger" id="deleteBtn">Xóa bản save này</button>
+          </div>
+          <input id="backupInput" type="file" accept=".json,application/json" class="hidden">
+          <div id="actionStatus" class="status">Chưa thực hiện thao tác nào.</div>
+        </div>
+        <div class="section">
+          <h2>Các bản save của game</h2>
+          <div id="saveList" class="game-list"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+  <div class="foot">Dữ liệu được lưu trong localStorage của trình duyệt này. Xóa dữ liệu trang web hoặc đổi trình duyệt có thể làm mất các bản save chưa export.</div>
+</div>
+<script>
+(() => {
+  "use strict";
+  const STORAGE_KEY = "rpg-save-hub-v1";
+  const $ = id => document.getElementById(id);
+  let state = loadState();
+  let selectedGameId = state.games[0]?.id || null;
+  let selectedSaveId = null;
+  let dirty = false;
+
+  function uid() {
+    return (globalThis.crypto && crypto.randomUUID) ? crypto.randomUUID() :
+      "id-" + Date.now().toString(36) + "-" + Math.random().toString(36).slice(2, 10);
+  }
+  function loadState() {
+    try {
+      const parsed = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{"version":1,"games":[]}');
+      if (parsed && Array.isArray(parsed.games)) {
+        parsed.games = parsed.games.filter(g => g && typeof g.id === "string" && typeof g.name === "string" && Array.isArray(g.saves));
+        return parsed;
+      }
+    } catch (_) {}
+    return { version: 1, games: [] };
+  }
+  function persist() {
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+      return true;
+    } catch (e) {
+      setStatus("editorStatus", "Không thể lưu trong trình duyệt. Dữ liệu có thể quá lớn; hãy export ra file.", true);
+      return false;
+    }
+  }
+  function currentGame() { return state.games.find(g => g.id === selectedGameId) || null; }
+  function currentSave() {
+    const g = currentGame();
+    return g ? g.saves.find(s => s.id === selectedSaveId) || null : null;
+  }
+  function setStatus(id, message, bad = false) {
+    const el = $(id); el.textContent = message; el.className = "status" + (bad ? " bad" : " good");
+  }
+  function safeFilename(s) {
+    return (s || "save").replace(/[<>:"/\\|?*\x00-\x1F]/g, "_").trim().slice(0, 80) || "save";
+  }
+  function download(name, content) {
+    const blob = new Blob([content], {type:"application/json;charset=utf-8"});
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a"); a.href = url; a.download = name;
+    document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(url), 1000);
+  }
+  function parseJson(text) {
+    const value = JSON.parse(text);
+    if (value === null || typeof value !== "object") throw new Error("Save JSON phải là object hoặc array.");
+    return value;
+  }
+  function renderGames() {
+    const list = $("gameList"); list.replaceChildren();
+    if (!state.games.length) {
+      const p = document.createElement("div"); p.className = "empty"; p.textContent = "Chưa có game nào."; list.append(p);
+    }
+    state.games.forEach(g => {
+      const b = document.createElement("button"); b.className = "game" + (g.id === selectedGameId ? " active" : "");
+      const glyph = document.createElement("span"); glyph.className = "glyph"; glyph.textContent = "⚔";
+      const meta = document.createElement("span"); meta.className = "meta";
+      const strong = document.createElement("strong"); strong.textContent = g.name;
+      const small = document.createElement("small"); small.textContent = `${g.saves.length} bản save`;
+      meta.append(strong, small); b.append(glyph, meta);
+      b.addEventListener("click", () => {
+        if (!confirmDiscard()) return;
+        selectedGameId = g.id; selectedSaveId = g.saves[0]?.id || null; dirty = false; render();
+      });
+      list.append(b);
+    });
+  }
+  function confirmDiscard() {
+    if (!dirty) return true;
+    return confirm("Bạn có thay đổi chưa lưu. Bỏ các thay đổi đó?");
+  }
+  function renderSaves() {
+    const list = $("saveList"); list.replaceChildren();
+    const g = currentGame(); if (!g) return;
+    if (!g.saves.length) {
+      const p = document.createElement("div"); p.className = "empty"; p.textContent = "Game này chưa có bản save. Hãy nhập JSON hoặc tạo nội dung rồi lưu."; list.append(p); return;
+    }
+    g.saves.forEach(s => {
+      const b = document.createElement("button"); b.className = "game" + (s.id === selectedSaveId ? " active" : "");
+      const glyph = document.createElement("span"); glyph.className = "glyph"; glyph.textContent = "▤";
+      const meta = document.createElement("span"); meta.className = "meta";
+      const strong = document.createElement("strong"); strong.textContent = s.name;
+      const small = document.createElement("small"); small.textContent = new Date(s.updatedAt || s.createdAt || Date.now()).toLocaleString();
+      meta.append(strong, small); b.append(glyph, meta);
+      b.addEventListener("click", () => {
+        if (!confirmDiscard()) return;
+        selectedSaveId = s.id; dirty = false; renderEditor();
+      });
+      list.append(b);
+    });
+  }
+  function renderEditor() {
+    const g = currentGame();
+    $("noGame").classList.toggle("hidden", !!g);
+    $("editor").classList.toggle("hidden", !g);
+    if (!g) return;
+    $("gameTitle").textContent = g.name;
+    const s = currentSave();
+    $("saveName").value = s?.name || "Save mới";
+    $("jsonData").value = s ? JSON.stringify(s.data, null, 2) : '{\n  \n}';
+    $("saveState").textContent = dirty ? "Có thay đổi chưa lưu" : (s ? "Đã lưu" : "Bản save mới");
+    $("fileInput").value = "";
+    renderSaves();
+  }
+  function render() { renderGames(); renderEditor(); }
+  function markDirty() { dirty = true; $("saveState").textContent = "Có thay đổi chưa lưu"; }
+  function saveCurrent() {
+    const g = currentGame(); if (!g) return;
+    let data;
+    try { data = parseJson($("jsonData").value); }
+    catch (e) { setStatus("editorStatus", "JSON không hợp lệ: " + e.message, true); return; }
+    const name = $("saveName").value.trim() || "Save";
+    let s = currentSave();
+    if (!s) {
+      s = { id: uid(), name, data, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+      g.saves.unshift(s); selectedSaveId = s.id;
+    } else {
+      s.name = name; s.data = data; s.updatedAt = new Date().toISOString();
+    }
+    if (!persist()) return;
+    dirty = false; render(); setStatus("editorStatus", "Đã lưu bản save trong trình duyệt.");
+  }
+  function importSaveFile(file) {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const data = parseJson(String(reader.result));
+        const g = currentGame(); if (!g) return;
+        const base = file.name.replace(/\.json$/i, "");
+        const s = { id: uid(), name: base || "Save đã import", data, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() };
+        g.saves.unshift(s); selectedSaveId = s.id; dirty = false;
+        if (!persist()) return;
+        render(); setStatus("actionStatus", "Import thành công: " + s.name);
+      } catch (e) { setStatus("actionStatus", "Không import được: " + e.message, true); }
+    };
+    reader.onerror = () => setStatus("actionStatus", "Không đọc được file.", true);
+    reader.readAsText(file);
+  }
+  function exportCurrent() {
+    const g = currentGame(), s = currentSave(); if (!g || !s) { setStatus("actionStatus", "Hãy lưu hoặc chọn một bản save trước.", true); return; }
+    download(`${safeFilename(g.name)}-${safeFilename(s.name)}.json`, JSON.stringify(s.data, null, 2));
+    setStatus("actionStatus", "Đã tạo file JSON cho bản save đang chọn.");
+  }
+  function exportAll() {
+    download("rpg-save-hub-backup.json", JSON.stringify({ app:"RPG Save Hub", version:1, exportedAt:new Date().toISOString(), games:state.games }, null, 2));
+    setStatus("actionStatus", "Đã export toàn bộ danh sách game và bản save.");
+  }
+  function importBackup(file) {
+    if (!file) return;
+    const reader = new FileReader();
+    reader.onload = () => {
+      try {
+        const backup = JSON.parse(String(reader.result));
+        if (!backup || !Array.isArray(backup.games)) throw new Error("Đây không phải backup của Save Hub.");
+        let added = 0;
+        backup.games.forEach(incoming => {
+          if (!incoming || typeof incoming.name !== "string" || !Array.isArray(incoming.saves)) return;
+          let target = state.games.find(g => g.name.toLowerCase() === incoming.name.toLowerCase());
+          if (!target) {
+            target = { id:uid(), name:incoming.name, saves:[] }; state.games.push(target);
+          }
+          incoming.saves.forEach(s => {
+            if (!s || !("data" in s)) return;
+            target.saves.push({
+              id:uid(), name:String(s.name || "Imported save"),
+              data:s.data, createdAt:s.createdAt || new Date().toISOString(),
+              updatedAt:new Date().toISOString()
+            }); added++;
+          });
+        });
+        if (!persist()) return;
+        selectedGameId = state.games[state.games.length - 1]?.id || null;
+        selectedSaveId = currentGame()?.saves[0]?.id || null; dirty = false; render();
+        setStatus("actionStatus", `Đã nhập backup. Thêm ${added} bản save; dữ liệu cũ được giữ nguyên.`);
+      } catch (e) { setStatus("actionStatus", "Backup không hợp lệ: " + e.message, true); }
+    };
+    reader.onerror = () => setStatus("actionStatus", "Không đọc được file backup.", true);
+    reader.readAsText(file);
+  }
+
+  $("addGame").addEventListener("click", () => {
+    const name = $("newGame").value.trim();
+    if (!name) { $("newGame").focus(); return; }
+    if (state.games.some(g => g.name.toLowerCase() === name.toLowerCase())) {
+      alert("Game này đã có trong danh sách."); return;
+    }
+    if (!confirmDiscard()) return;
+    const g = { id:uid(), name, saves:[] }; state.games.push(g);
+    selectedGameId = g.id; selectedSaveId = null; dirty = false; $("newGame").value = "";
+    persist(); render();
+  });
+  $("newGame").addEventListener("keydown", e => { if (e.key === "Enter") $("addGame").click(); });
+  $("saveBtn").addEventListener("click", saveCurrent);
+  $("formatBtn").addEventListener("click", () => {
+    try { $("jsonData").value = JSON.stringify(parseJson($("jsonData").value), null, 2); setStatus("editorStatus", "JSON hợp lệ và đã được định dạng."); }
+    catch(e) { setStatus("editorStatus", "JSON không hợp lệ: " + e.message, true); }
+  });
+  $("jsonData").addEventListener("input", markDirty);
+  $("saveName").addEventListener("input", markDirty);
+  $("fileInput").addEventListener("change", e => importSaveFile(e.target.files[0]));
+  $("exportBtn").addEventListener("click", exportCurrent);
+  $("exportAllBtn").addEventListener("click", exportAll);
+  $("importAllBtn").addEventListener("click", () => $("backupInput").click());
+  $("backupInput").addEventListener("change", e => { importBackup(e.target.files[0]); e.target.value = ""; });
+  $("deleteBtn").addEventListener("click", () => {
+    const g = currentGame(), s = currentSave(); if (!g || !s) { setStatus("actionStatus", "Hãy chọn bản save cần xóa.", true); return; }
+    if (!confirm(`Xóa bản save "${s.name}"? Thao tác này không thể hoàn tác.`)) return;
+    g.saves = g.saves.filter(x => x.id !== s.id); selectedSaveId = g.saves[0]?.id || null; dirty = false;
+    persist(); render(); setStatus("actionStatus", "Đã xóa bản save.");
+  });
+  window.addEventListener("beforeunload", e => { if (dirty) { e.preventDefault(); e.returnValue = ""; } });
+  render();
+})();
+</script>
+</body>
+</html>
